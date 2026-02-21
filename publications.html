@@ -21,14 +21,10 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<script>
-	function toggleBibtex(id) {
-	  const el = document.getElementById(id);
-	  if (el.style.display === "none" || el.style.display === "") {
-	    el.style.display = "block";
-	  } else {
-	    el.style.display = "none";
-	  }
-	}
+		function toggleBibtex(id) {
+		  const el = document.getElementById(id);
+		  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+		}
 	</script>
 	<body class="is-preload">
 
@@ -142,7 +138,7 @@
 															    <li><a href="https://doi.org/10.1016/j.jde.2025.114065" class="button primary small">doi</a></li>
 															    <li><a href="https://arxiv.org/abs/2412.00780" class="button small">arXiv</a></li>
 															    <li><a href="#" class="button small" onclick="toggleBibtex('bibtex5'); return false;">BibTeX</a></li>
-																
+															   </ul>
 																<pre id="bibtex5" class="bibtex compact" style="display:none;"><code>
 																@article {AFH25,
 																  AUTHOR = {Anker, Jean-Philippe and Palmirotta, Guendalina},
@@ -155,7 +151,6 @@
 																  URL = {https://doi.org/10.1016/j.jde.2025.114065},
 																}
 																</code></pre>
-																</ul>
 															</td>
 														</tr>
 														<tr>
@@ -365,6 +360,7 @@
 	
 		</body>
 	</html>
+
 
 
 
