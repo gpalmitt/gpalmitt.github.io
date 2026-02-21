@@ -28,12 +28,12 @@
 	
 	function copyBibtex(preId) {
 	  const pre = document.getElementById(preId);
-	  const code = pre.querySelector("code");   // select the code inside pre
-	  if (code) {
-	    navigator.clipboard.writeText(code.innerText)
-	      .then(() => alert("BibTeX copied to clipboard!"))
-	      .catch(err => alert("Failed to copy: " + err));
-	  }
+	  if (!pre) return;
+	  
+	  const text = pre.innerText; // safely get all text inside pre
+	  navigator.clipboard.writeText(text)
+	    .then(() => alert("BibTeX copied to clipboard!"))
+	    .catch(err => alert("Failed to copy: " + err));
 	}
 	</script>
 	<body class="is-preload">
@@ -360,6 +360,7 @@
 	
 		</body>
 	</html>
+
 
 
 
