@@ -21,15 +21,15 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<script>
-function toggleBibtex(id) {
-  const el = document.getElementById(id);
-  if (el.style.display === "none" || el.style.display === "") {
-    el.style.display = "block";
-  } else {
-    el.style.display = "none";
-  }
-}
-</script>
+	function toggleBibtex(id) {
+	  const el = document.getElementById(id);
+	  if (el.style.display === "none" || el.style.display === "") {
+	    el.style.display = "block";
+	  } else {
+	    el.style.display = "none";
+	  }
+	}
+	</script>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -141,19 +141,21 @@ function toggleBibtex(id) {
 															  <ul class="actions small">
 															    <li><a href="https://doi.org/10.1016/j.jde.2025.114065" class="button primary small">doi</a></li>
 															    <li><a href="https://arxiv.org/abs/2412.00780" class="button small">arXiv</a></li>
-															    <li><a href="#" class="button small" onclick="toggleBibtex('bibtex5'); return false;">BibTeX</a></li>
+															    <a href="#" class="button small" onclick="toggleBibtex('bibtex5'); return false;">BibTeX</a></li>
 															  </ul>
 															
-															  <pre id="bibtex5" class="bibtex" style="display:none;"><code>@article {AFH25,
-															  AUTHOR = {Anker, Jean-Philippe and Palmirotta, Guendalina and Sire, Yannick},
-															  TITLE = {The Schrödinger equation with fractional Laplacian on hyperbolic spaces and homogeneous trees},
-															  JOURNAL = {J. Differ. Equ.},
-															  FJOURNAL = {Journal of Differential Equations},
-															  VOLUME = {460},
-															  YEAR = {2026},
-															  PAGES = {1--43},
-															  URL = {https://doi.org/10.1016/j.jde.2025.114065},
-															}</code></pre>
+															  <pre id="bibtex5" class="bibtex" style="display:none;"><code>
+																@article {APS26,
+																  AUTHOR = {Anker, Jean-Philippe and Palmirotta, Guendalina and Sire, Yannick},
+																  TITLE = {The Schrödinger equation with fractional Laplacian on hyperbolic spaces and homogeneous trees},
+																  JOURNAL = {J. Differ. Equ.},
+																  FJOURNAL = {Journal of Differential Equations},
+																  VOLUME = {460},
+																  YEAR = {2026},
+																  PAGES = {1--43},
+																  URL = {https://doi.org/10.1016/j.jde.2025.114065},
+																}
+																</code></pre>
 															</td>
 														</tr>
 														<tr>
@@ -363,6 +365,7 @@ function toggleBibtex(id) {
 	
 		</body>
 	</html>
+
 
 
 
